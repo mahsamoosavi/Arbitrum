@@ -16,7 +16,7 @@ contract('SimpleEthPayment', function(accounts) {
         //Following "value" is in wei.
         //1 ether = 1,000,000,000,000,000,000 wei
         //Note that the sender must have enough ether on Arbitrum to be able to do the transfer (This can be done using https://bridge.offchainlabs.com/)
-        await SimpleEthPaymentInstance.depositEther({value: 1}); //transferring 0.000000000000000001 eth
+        await SimpleEthPaymentInstance.depositEther({value: 10}); //transferring 0.000000000000000001 eth
         
 
         console.log('********************************************');
@@ -39,7 +39,7 @@ contract('SimpleEthPayment', function(accounts) {
         console.log('********************************************');
         
         const num2 = await SimpleEthPaymentInstance.getBalance();
-        console.log('The Ether balance of SimpleEthPayment after deposit is:', num2.toNumber()); 
+        console.log('The Ether balance of SimpleEthPayment after transfer is:', num2.toNumber()); 
      
     });
 
