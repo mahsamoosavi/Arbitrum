@@ -1,8 +1,9 @@
 const wrapProvider = require('arb-ethers-web3-bridge').wrapProvider
 const HDWalletProvider = require('@truffle/hdwallet-provider')
 const mnemonic =
-  'surge ability together fruit retire harvest release turkey social coffee owner uphold panel group car'
+    'surge ability together fruit retire harvest release turkey social coffee owner uphold panel group car'
 
+  
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // for more about customizing your Truffle configuration!
@@ -35,7 +36,7 @@ module.exports = {
     solc: {
       //version: "0.5.3", // Fetch exact version from solc-bin (default: truffle's version)
       version: "0.6.11",
-       docker: true, // Use "0.5.3" you've installed locally with docker (default: false)
+       ////docker: true, // Use "0.5.3" you've installed locally with docker (default: false)
       settings: {
         // See the solidity docs for advice about optimization and evmVersion
         optimizer: {
